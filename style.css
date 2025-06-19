@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset some default styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 1440px;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 90%;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 0 4em;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  margin-top: 3em;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .logo {
+  color: black;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.nav .cart-icon {
+  background: black;
+  padding: 0.8em 0.5em;
+  border-radius: 10px 10px 30px 10px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero .hero-text {
+  width: 50%;
+}
+
+.hero .hero-text h1 {
+  font-family: 'Roboto', sans-serif;
+  width: 10em;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: black;
+}
+
+.hero .hero-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: black;
+}
+
+.hero .hero-text p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  width: 25em;
+}
+
+/* First Button */
+.hero-text #view-menu {
+  background: #cb4a4a;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: lighter;
+  cursor: pointer;
+  margin-top: 2em;
+}
+
+.hero-text #view-menu:hover {
+  background: #a33a3a;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text #view-menu:active {
+  background: white;
+  border: 2px solid #cb4a4a;
+  color: #cb4a4a;
+}
+
+/* Second Button */
+.hero-text #book-table {
+  background: white;
+  color: #cb4a4a;
+  outline: none;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: lighter;
+  cursor: pointer;
+  margin-top: 2em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text #book-table:hover {
+  border: 2px solid #cb4a4a;
+  color: #cb4a4a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-text #book-table:active {
+  background: rgb(192, 191, 191);
+  border: 2px solid #cb4a4a;
+  color: #cb4a4a
+}
+
+/* For Lunch */
+.hero-text .lunch {
+  margin-top: 1.5em;
+  font-weight: 900;
+  color: black;
+}
+
+.hero-text .arrow {
+  display: flex;
+  margin-left: 5em;
+}
+
+.hero .hero-image {
+  width: 50%;
+}
+
+.hero-image .grilled-chicken {
+  width: 100%;
+}
+
+/* Responsive Section */
+@media screen and (max-width: 1024px) {
+ .nav {
+  margin-bottom: 2em;
+}
+}
+
+@media screen and (max-width: 768px) {
+   .hero {
+  flex-direction: column;
+}
+
+.nav {
+  margin-bottom: 0;
+}
+
+ .hero .hero-text h1 {
+  margin-bottom: 0.5em;
+}
+
+ .hero .hero-text h2 {
+  margin-bottom: 0.5em;
+}
+
+ .hero .hero-text {
+  width: 100%;
+  text-align: center;
+}
+
+ .hero .hero-text h1 {
+  width: 100%;
+  margin-bottom: 0;
+}
+.hero .hero-text p {
+  width: 100%;
+}
+
+.hero-text .arrow {
+  margin-left: 0;
+  margin: 0 auto;
+}
+}
+
+@media  screen and (max-width: 435px) {
+  main {
+    height: 200%;
+    width: 100%;
+    padding: 0 2em;
+  }
+
+  .nav {
+  margin-top: 15em;
+}
+
+.nav .cart-icon {
+  padding: 0.5em 0.3em;
+}
+
+  .hero .hero-text h1 {
+  font-size: 1.5rem;
+  margin-top: 0.5em;
+}
+
+  .hero .hero-text h2 {
+  font-size: 1.1rem;
+}
+
+.hero .hero-text p {
+  font-size: 0.9rem;
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+.hero .hero-image {
+  width: 100%;
+}
+}
